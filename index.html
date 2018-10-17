@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>codepen</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- End message -->
+  <div id="win-block">
+    <div class="block-content">
+      <h1>YEEAH! Well done!</h1>
+      <hr>
+        <p>
+          <b>Your time: </b><span id="finaltime"></span>
+        </p>
+        
+        <h2><a href="" onclick="reset()">Restart</a></h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Follow Me</h3>
+        </div>
+        <div class="col-md-3 col-md-offset-3">
+          <a href="https://www.facebook.com/luiseduardo.cislaghi" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="https://www.linkedin.com/in/luis-cislaghi" target="_blank">
+            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-256.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /End message -->
+
+  <div class="row info-block">
+    <div class="col-md-4">
+      <p><span id="hours"></span><span id="minutes"></span><span id="seconds">0s</span></p>
+    </div>
+    <div class="col-md-4">
+      <a href="" onclick="reset()">Restart</a>
+    </div>
+    <div class="col-md-4">
+      <p>Remaining Pairs: <span id="remainingPairs"></span></p>
+    </div>
+  </div>
+  <!-- Game -->
+  <div class="wrapper">
+    <!-- Cards -->
+    <div class="item">
+      <div id="1" class="card" onclick="flip(this)" par="1">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/aWDI9N8.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="2" class="card" onclick="flip(this)" par="2">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/t3jLYQk.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="3" class="card" onclick="flip(this)" par="3">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/ohuWCRP.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="4" class="card" onclick="flip(this)" par="1">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/aWDI9N8.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="5" class="card" onclick="flip(this)" par="2">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/t3jLYQk.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="6" class="card" onclick="flip(this)" par="3">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/ohuWCRP.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="7" class="card" onclick="flip(this)" par="4">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/uT56WwF.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="8" class="card" onclick="flip(this)" par="5">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/GGcRmCB.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="9" class="card" onclick="flip(this)" par="6">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/AIlaMip.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="10" class="card" onclick="flip(this)" par="4">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/uT56WwF.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="11" class="card" onclick="flip(this)" par="5">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/GGcRmCB.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="12" class="card" onclick="flip(this)" par="6">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/AIlaMip.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="13" class="card" onclick="flip(this)" par="7">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/oGH7N3S.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="14" class="card" onclick="flip(this)" par="8">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/6PRRrLI.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="15" class="card" onclick="flip(this)" par="9">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/rTMoPMW.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="16" class="card" onclick="flip(this)" par="7">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/oGH7N3S.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="17" class="card" onclick="flip(this)" par="8">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/6PRRrLI.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="18" class="card" onclick="flip(this)" par="9">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/rTMoPMW.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="19" class="card" onclick="flip(this)" par="10">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/AiUczOc.png"></div>
+      </div>
+    </div>
+    <div class="item">
+      <div id="20" class="card" onclick="flip(this)" par="10">
+        <div class="front"><img src="https://i.imgur.com/HCaDi2n.png"></div>
+        <div class="back"><img src="https://i.imgur.com/AiUczOc.png"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
