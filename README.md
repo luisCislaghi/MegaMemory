@@ -1,15 +1,15 @@
 # Mega Memory
-It is just a prototype of a simple memory game maded in my free time :)
+This is a prototype of a simple memory game maded in my free time :)
 
 ## Tecnologies
 * Pure JS
 * HTML5
 * CSS3
-* Bootstrap
+* Bootstrap (Working to romove it)
 
 ## Feel free to help
 MegaMemory is avaible to recive new features and updates like:
-* Desktop and Mobile version using CSS Flex-Box.
+* Mobile version using CSS Flex-Box.
 * Create custom games with images uploaded by users (user interaction)
 * Option to print a cuttable version of the game for use in a pedagogical way
 

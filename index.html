@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>codepen</title>
+  <meta charset="utf-8" />
+  <title>Mega Memory</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-
-  <!-- End message -->
+  <!-- Winner Block -->
   <div id="win-block">
     <div class="block-content">
-      <h1>YEEAH! Well done!</h1>
+      <h1>Pretty easy for you</h1>
       <hr>
         <p>
           <b>Your time: </b><span id="finaltime"></span>
         </p>
-        
         <h2><a href="" onclick="reset()">Restart</a></h2>
       <hr>
       <div class="row">
         <div class="col-md-12">
-          <h3>Follow Me</h3>
+          <p>Follow Me</p>
         </div>
         <div class="col-md-3 col-md-offset-3">
-          <a href="https://www.facebook.com/luiseduardo.cislaghi" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg">
+          <a class="social" href="https://github.com/luiscislaghi" target="_blank">
+            GitHub
           </a>
         </div>
         <div class="col-md-3">
-          <a href="https://www.linkedin.com/in/luis-cislaghi" target="_blank">
-            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-256.png">
+          <a class="social" href="https://www.linkedin.com/in/luis-cislaghi" target="_blank">
+            LinkedIn
           </a>
         </div>
       </div>
     </div>
   </div>
-  <!-- /End message -->
-
-  <div class="row info-block">
-    <div class="col-md-4">
+  <!-- /Winner Block -->
+  <!-- Info Block -->
+  <div class="info-block">
+    <div>
       <p><span id="hours"></span><span id="minutes"></span><span id="seconds">0s</span></p>
     </div>
-    <div class="col-md-4">
+    <div>
       <a href="" onclick="reset()">Restart</a>
     </div>
-    <div class="col-md-4">
+    <div>
       <p>Remaining Pairs: <span id="remainingPairs"></span></p>
     </div>
   </div>
+  <!-- /Info Block -->
   <!-- Game -->
   <div class="wrapper">
     <!-- Cards -->
@@ -171,8 +173,9 @@
         <div class="back"><img src="https://i.imgur.com/AiUczOc.png"></div>
       </div>
     </div>
+    <!-- /Cards -->
   </div>
-
+  <!-- /Game -->
   <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

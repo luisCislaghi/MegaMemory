@@ -1,12 +1,23 @@
 body{
   font-family: 'roboto', 'arial';
   padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* INFO BLOCK */
 .info-block{
+  width: 100%;
 	font-size: 30px;
-	text-align: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.info-block div {
+  width: 33%;
 }
 .info-block a,.block-content a{
   color: #333;
@@ -23,31 +34,26 @@ body{
   height: 2px;
   background: #4c545f;
   content: '';
-  display: inline-block;
-  margin: 0px 10% 15px 10%;
+  transform: translateY(100%);
   position: relative;
 }
 /* CARDS */
 .wrapper{
-	width: 70%;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80%;
 }
 .wrapper .item{
-  position: relative; 
-	width: 160px;
-	margin-top: 0px;
-  margin-bottom: 20px;
-  margin-left: 23px;
-  margin-right: 23px;
-	height: 160px;
+	width: 130px;
+  margin: 20px;
+	height: 130px;
   display: inline-block;
 
-  -webkit-perspective: 130px;
-  -moz-perspective: 130px;
-  -o-perspective: 130px;
-  perspective: 130px;
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
+  -o-perspective: 200px;
+  perspective: 200px;
 
 }
 
@@ -146,6 +152,10 @@ body{
   left: 0;
   opacity: 0;
   z-index: 9999999;
+}
+
+#win-block .social {
+  font-size: 18px;
 }
 
 .block-content{
